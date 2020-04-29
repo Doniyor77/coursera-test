@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>00005292 website</title>
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="shortcut icon" href="images/mu1234.png" type="image/x-icon">
+    <script src="scripts/slideshow.js"></script>
+</head>
+<body>
+    <header>
+        <div class="headertop">     <!--head box with navigation and slideshow-->
+        <div class="slider">
+        <span class="slide fade"><!--Span is into div class-->   <!--animated box with images -->
+          <img src="images/slide1.jpg" alt="#"> <!--First image-->
+        </span>
+        <span class="slide fade">  
+          <img src="images/slide2.jpg" alt="#"> <!--Second image--> 
+        </span>
+        <a class="next" onclick="switchSlide(1)">&#10095;</a>   <!--buttons-->
+        <a class="prev" onclick="switchSlide(-1)">&#10094;</a>   <!--buttons-->
+      </div>
+      <div class="dots"><!--dots-->
+        <span class="dot" onclick="showSlide(1)"></span> <!--dot1 to first image-->  
+        <span class="dot" onclick="showSlide(2)"></span> <!--dot2 to second image-->
+      </div>   
+        <div class="nav">
+        <nav>
+        <!-- Navigation bar in class nav-->
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="history.html">History</a></li>s
+          <li><a href="about.html" class="active">About</a></li>
+        </ul> 
+        </nav>       
+        </div>
+        </div>
+    </header>
+         <section>
+            <div class="headbottom">
+            <h1>
+        The purpose of my website is to show the Juventus' fans all new information and history of this football club 
+        </h1>     
+        </div>
+        </section>
+          <footer>
+          <!--Sitemap in footer-->
+         <div class="textfooter">
+         <a href="index.html">Home</a>
+         <a href="store.html">Store</a>
+         <a href="history.html">History</a>   
+         <a href="about.html" class="active2">About</a>   
+        </div>
+        <h2 class="cr"> <!--Copyright article-->
+              ©2017 WIUT Student
+            </h2>  
+        </footer>
+</body>
+</html>

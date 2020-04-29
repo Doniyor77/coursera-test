@@ -1,0 +1,242 @@
+* {
+padding : 0;
+margin : 0 auto; 
+} 
+body {
+background-color: rgba(10, 9, 9, 0.77); /*background color*/
+box-shadow : 0 0 10px #000000; /*the shadow of whole body*/ 
+width : 1000px;
+}
+header {
+height : 450px;
+}
+.headertop {
+overflow : hidden; 
+width : 1000px;
+box-shadow : 0 0 10px #000000;
+position : relative;   /*normal position in order to set top,right,bottom,left from it is normal position*/
+height : 480px;
+}
+.nav{
+bottom: 430px;
+width: 1000px;
+position: relative;
+}
+.nav ul {
+list-style: none;/*no list-style*/
+height : 70px;
+background-color : rgba(0, 0, 0, 0.86);
+overflow : hidden;/*extra information is hidden*/
+}
+.nav ul li {
+padding-left : 140px;
+list-style : none; /*no list-style*/
+}
+.nav li {
+float : left;
+}
+.nav li a {
+color : white;
+text-align : center; 
+display : block; /*Displays an element as a block element*/
+text-decoration : none;/*no decoration to links*/
+padding : 27px 17px; /*positioning of top and right*/
+}
+
+.slider{
+position: relative;
+width: 1000px;
+top: 69px; 
+height: 411px;
+}
+/* Each image inside .slide will occupy 100% out of width and height */
+.slide > img {
+height: 100%;
+width: 100%;
+}
+/* previous and next buttons */
+.slide.active, 
+.dot.active,
+.dot:hover {
+transition: 0.5s;  /* set delay for styling to appear */
+background-color:#28a30b;
+}
+/* Fading animation */
+.fade {
+animation-name: fade; /* use our "fade" animation created before for elements with .fade class */
+animation-duration: 3.1s; /* set delay for animation to be played */
+height: 100%;
+}
+/* create a keyframe animation and name it "fade" */
+@keyframes fade {
+from {opacity: 0.1}   /* change from semi-transparency */
+to {opacity: 1}       /* to fully opaque element */
+}
+.active { /*this div is illuminating*/
+background-color : #28a30b;
+}
+.dots {
+position: relative;
+text-align: center;
+bottom: 0px;
+top: 30px;
+}
+
+.dot {
+cursor: pointer;
+height: 13px;
+width: 13px;
+margin: 0 3px;
+background-color: #bbb;
+border-radius: 50%;     /* use corner rounding to make circles */
+display: inline-block;  /* display all dots on the same line */
+}
+.prev, .next{
+cursor: pointer;
+position: absolute;
+top: 43%;
+width: auto;
+padding: 16px;
+color: white;
+}
+.next{
+right: 0;  /* align right edges of .next button and of its nearest positioned ancestor (.slideshow-container) */
+}
+.prev:hover, .next:hover {
+background-color: rgba(0, 0, 0, 0.8); /* 0.8 means 80% opaque, 20% transparent */
+transition: 0.6s ease;  /* set delay for styling to appear */
+}
+.headtop {
+position : relative;   /*normal position in order to set top,right,bottom,left from it is normal position*/
+width : 1000px;
+overflow : hidden; 
+height : 480px;
+box-shadow : 0 0 10px #000000;
+}
+.section1{ /*section settings*/
+height: 580px;
+position: relative;
+overflow: hidden;
+}
+.home{ /*the first button settings.*/
+position: absolute;
+padding: 18px 40px;
+text-transform: uppercase;
+font-size: 15px;
+left: 190px;
+bottom: 43px;
+text-decoration: none;
+letter-spacing: 3px;
+color: white;
+border-radius: 62px;
+background-color: #000000;
+}
+.away{ /*the second button settings.*/
+position: absolute;
+padding: 18px 40px;
+text-transform: uppercase;
+font-size: 15px;
+left: 440px;
+bottom: 43px;
+text-decoration: none;
+letter-spacing: 3px;
+color: white;
+border-radius: 62px;
+background-color: #3F51B5;
+}
+.third{ /*the third button settings.*/
+position: absolute;
+padding: 18px 40px;
+text-transform: uppercase;
+font-size: 15px;
+left: 680px;
+bottom: 44px;
+text-decoration: none;
+letter-spacing: 3px;
+color: white;
+border-radius: 62px;
+background-color: rgba(132, 132, 132, 0.71);
+}
+.kit1{ /*pictures.*/
+position: absolute;
+left: 640px;
+top: 110px;
+width: 260px;
+height: 350px;
+}
+.kit2{ /*pictures.*/
+position: absolute;
+left: 120px;
+top: 110px;
+width: 260px;
+height: 350px;
+}
+.kit3{ /*pictures.*/
+position: absolute;
+left: 380px;
+top: 110px;
+width: 260px;
+height: 350px;
+}
+.table{
+width: 787px;
+height: 100px;
+}
+table {
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+
+td{
+border: 2px solid rgba(229, 221, 221, 0.76);
+color: white;
+text-align: center;
+padding: 8px;
+}
+.homered{
+    background-color: rgba(0, 0, 0, 0.62);
+}
+.homeblue{
+    background-color: #3F51B5;
+}
+.homewhite{
+background-color: rgba(132, 132, 132, 0.71);
+}
+.section2{
+height: 590px;
+overflow:hidden; 
+}
+.video{ /*video settings.*/
+min-height: 100%; /*the height is the same as the section2 box*/
+width: 1000px;
+}
+footer {  /*footer settings*/
+height : 400px;
+width : 1000px;
+position: relative;
+}
+.textfooter { /*box with sitemap text*/
+padding-left: 400px;
+width: 150px;
+padding-top: 50px;
+float: left;
+}
+.textfooter a { /*sitemap links*/
+text-decoration : none;
+color : white;
+font-size : 27px;
+padding-left : 50px;
+}
+.active2 { /*illuminating the current page in sitemap*/
+text-align : center;
+padding-right : 50px;
+background-color: #28a30b;
+}
+.cr{ /*CR stands for Copyright*/ 
+color: white;
+font-family: monospace;
+position: absolute;
+font-size: 20px;
+top: 350px;
+}

@@ -1,0 +1,163 @@
+* {
+margin : 0 auto; 
+padding : 0;
+}
+/* rectangle form of body */ 
+body {
+margin-top : 100px; /*to move body slight bottom*/ 
+width : 1000px;
+box-shadow : 0 0 10px #000000; /*the shadow of whole body*/ 
+background-image:url(../images/background.png); /*background image*/
+background-size : cover; /*image size fixed to body*/
+}
+header {
+height : 480px;
+}
+.nav {
+float : right; /*navigation is located in the right*/
+width : 1000px;
+}
+.nav ul {
+height : 70px;
+list-style: none;/*no list-style*/
+overflow : hidden;/*extra information is hidden*/
+background-color : #333;
+}
+.nav ul li {
+list-style : none; /*no list-style*/
+padding-left : 110px;
+}
+.nav li {
+float : left;
+}
+.nav li a {
+display : block; /*Displays an element as a block element*/
+color : white;
+text-align : center; 
+padding : 27px 17px; /*positioning of top and right*/
+text-decoration : none;/*no decoration to links*/
+}
+.active { /*this div is illuminating*/
+background-color : rgba(255, 11, 11, 0.71);
+}
+.headtop {
+position : relative;   /*normal position in order to set top,right,bottom,left from it is normal position*/
+width : 1000px;
+background-image : url(../images/man-united-home-16-17-img5.jpg); 
+background-position : left; /* sets the starting position of a background image.*/
+background-size : cover; 
+overflow : hidden; 
+height : 480px;
+box-shadow : 0 0 10px #000000;
+}
+section{   /*section with settings*/
+overflow: hidden;
+width: 1000px;
+height: 620px;
+}
+.contactdetails{
+text-align: center;
+font-family: Helvetica;
+color: white;
+padding-top: 50px;
+letter-spacing: 10px;
+}
+.leftaside{ /*aside left*/
+    float: left;
+    margin-top: 210px;
+}
+.rightaside{ /*aside right*/
+    float: right;
+    margin-top: 210px;
+}
+.contact{  /*contact settings*/ 
+padding: 15%;
+text-align: center;
+}
+form.contact {  /*slight change to top*/
+padding: 5%;	
+}
+.contact .form-control{  /* detailed info*/
+display: block;
+width: 50%;
+margin-bottom: 30px;
+padding: 10px 12px;
+background-color: #fff;
+}
+footer { /*the footer settings.*/
+background-image : url(../images/f297c63f6fdecbe7293449caec81ff71.jpg); /*special background*/
+background-position : center; /*the position of background is taken from the center*/
+width : 1000px;
+height : 400px;
+}
+.sitemap{ /*the sitemap*/
+text-align: center;
+font-size: 50px;
+color: white;
+font-family: sans-serif;
+letter-spacing: 10px;
+padding-top: 10px;
+}
+.textfooter { /*box with sitemap text*/
+position: relative;
+width: 200px;
+top: 65px;
+left: 13px;
+}
+.textfooter a { /*box with sitemap text*/
+padding-left : 50px;
+text-decoration : none;
+color : white;
+font-size : 27px;
+}
+.social { /*social box*/
+padding: 180px 40px;
+float: right; 
+}
+.social a {  /*links to social networks*/    
+width : 200px;
+height : 80px;
+display : block;
+background : url(../images/ikonki_03.png); /*set special background*/
+background-repeat : no-repeat; /*the background is not repeating, appearing only once*/
+}
+.social a:hover { /*make links illuminating while pressing the background*/
+background : url(../images/ikonki2_03.png);
+background-repeat : no-repeat;
+}
+.active2 { /*illuminating the current page in sitemap*/
+padding-right : 50px;
+text-align : center;
+background-color : rgba(0, 0, 0, 0.67);
+border-radius : 40px;
+}
+
+.contactme{ /*box with my contact info;*/
+width: 450px;
+height: 80px;
+}
+.contactme a{ /*links to my email*/ 
+text-decoration: none;
+}
+.email{ /*text to my contact info 00005292 email*/ 
+position: relative;
+color: white;
+font-size: 33px;
+top: 140px;
+background-color: rgba(33, 243, 113, 0.52);
+border-radius: 0px;
+width: 450px;
+left: 50px;
+}
+.email:hover{  /*illuminating the form while pressing*/
+background-color: rgba(255, 4, 4, 0.69);/*special color to hover*/ 
+color: white;
+}
+.cr{ /*CR stands for Copyright*/ 
+font-family: monospace;
+color: white;
+float: left;
+margin-top: 130px;
+font-size: 15px;
+padding-left: 30px;
+}

@@ -1,0 +1,269 @@
+* {
+padding : 0;
+margin : 0 auto; 
+} 
+body {
+background-color: rgba(10, 9, 9, 0.77); /*background color*/
+box-shadow : 0 0 10px #000000; /*the shadow of whole body*/ 
+width : 1000px;
+}
+header {
+height : 1780px;
+}
+.headertop {
+overflow : hidden; 
+width : 1000px;
+box-shadow : 0 0 10px #000000;
+position : relative;   /*normal position in order to set top,right,bottom,left from it is normal position*/
+height : 480px;
+}
+.nav{
+bottom: 430px;
+width: 1000px;
+position: relative;
+}
+.nav ul {
+list-style: none;/*no list-style*/
+height : 70px;
+background-color : rgba(0, 0, 0, 0.86);
+overflow : hidden;/*extra information is hidden*/
+}
+.nav ul li {
+padding-left : 140px;
+list-style : none; /*no list-style*/
+}
+.nav li {
+float : left;
+}
+.nav li a {
+color : white;
+text-align : center; 
+display : block; /*Displays an element as a block element*/
+text-decoration : none;/*no decoration to links*/
+padding : 27px 17px; /*positioning of top and right*/
+}
+
+.slider{
+position: relative;
+width: 1000px;
+top: 69px; 
+height: 411px;
+}
+/* Each image inside .slide will occupy 100% out of width and height */
+.slide > img {
+height: 100%;
+width: 100%;
+}
+/* previous and next buttons */
+.slide.active, 
+.dot.active,
+.dot:hover {
+transition: 0.5s;  /* set delay for styling to appear */
+background-color:#28a30b;
+}
+/* Fading animation */
+.fade {
+animation-name: fade; /* use our "fade" animation created before for elements with .fade class */
+animation-duration: 3.1s; /* set delay for animation to be played */
+height: 100%;
+}
+/* create a keyframe animation and name it "fade" */
+@keyframes fade {
+from {opacity: 0.1}   /* change from semi-transparency */
+to {opacity: 1}       /* to fully opaque element */
+}
+.active { /*this div is illuminating*/
+background-color : #28a30b;
+}
+.dots {
+position: relative;
+text-align: center;
+bottom: 0px;
+top: 30px;
+}
+
+.dot {
+cursor: pointer;
+height: 13px;
+width: 13px;
+margin: 0 3px;
+background-color: #bbb;
+border-radius: 50%;     /* use corner rounding to make circles */
+display: inline-block;  /* display all dots on the same line */
+}
+.prev, .next{
+cursor: pointer;
+position: absolute;
+top: 43%;
+width: auto;
+padding: 16px;
+color: white;
+}
+.next{
+right: 0;  /* align right edges of .next button and of its nearest positioned ancestor (.slideshow-container) */
+}
+.prev:hover, .next:hover {
+background-color: rgba(0, 0, 0, 0.8); /* 0.8 means 80% opaque, 20% transparent */
+transition: 0.6s ease;  /* set delay for styling to appear */
+}
+.headtop1 {
+position : relative;/*normal position in order to set top,right,bottom,left from it is normal position*/
+width : 1000px;
+height : 500px;
+}
+.infojuva{
+position: absolute;
+width: 500px;
+line-height: 40px;
+color: white;
+font-family: Helvetica,monospace;
+left: 250px;
+top: 100px;
+}
+.stadium{
+position: absolute;
+font-size: 50px;
+font-family: cursive;
+left: 340px;
+top: 60px;
+}
+.juvalogo{
+position: absolute;
+top: 150px;
+left: 100px;
+width: 100px;
+height: 100px;
+}
+.juvalogo2{
+position: absolute;
+top: 150px;
+right: 100px;
+width: 100px;
+height: 100px;
+}
+.headtop2 {/*box with bio*/
+position : relative;
+width : 1000px;
+background-color: white;
+overflow : hidden;
+height : 800px;
+}
+.buffon { /*logo positioning*/ 
+width : 600px;
+position : absolute;
+left : 200px;
+}
+.bioleft { /*text positioning*/
+width : 280px;
+position : absolute;
+top : 410px;
+left : 70px;
+line-height : 40px; /*spaces between height text*/
+color : black;
+font-size : 19px;
+}
+.g {
+color : #28a30b;
+font-size : 120px;
+font-family : sans-serif;
+}
+.red {/*vertical line positioning*/
+width : 17px;
+height : 280px;
+position : absolute;
+top : 400px;
+left : 350px;
+}
+.biocenter { /*middle biography*/
+width : 240px;
+position : absolute;
+top : 420px;
+left : 400px;
+line-height : 50px;
+color : black;
+font-size : 28px;
+font-style : oblique; /*italics text*/
+}
+.red2 { /*second line*/
+width : 17px;
+height : 280px;
+position : absolute;
+top : 400px;
+left : 670px;
+}
+.rightbio { /*text positioning*/
+width : 280px;
+position : absolute;
+top : 444px;
+left : 710px;
+line-height : 40px;
+color : black;
+font-size : 19px;
+}
+.btn2 { /*special button link to biography*/
+position : absolute;
+padding : 15px 60px; /*padding to top and right*/
+text-transform : uppercase;
+font-size : 16px;
+left : 358px;
+bottom : 40px;
+text-decoration : none;
+letter-spacing : 3px;
+color : white;
+border-radius : 32px;
+background-color : rgba(0, 0, 0, 0.89);
+}
+.btn2:hover { /*effect of illuminating while pressing the button*/
+background : #28a30b;
+color : #000;
+border-color : transparent;
+}
+section { /*widht and height of the section*/
+width : 1000px;
+height : 910px;
+}
+h1{  /*all information into section by headings*/
+font-family: sans-serif;
+font-size: 10px;
+}
+.section1 { /*whole box about players*/
+position : relative; /*relative positioning to move inside objects to top/right/bottom/left*/
+width : 1000px;
+background-color : transparent;
+overflow : hidden; /*extra information outside of the box is invisible*/
+height : 1200px;
+}
+.players{
+width : 1000px;
+overflow : hidden; /*extra information outside of the box is invisible*/
+height : 1200px;
+}
+footer {  /*footer settings*/
+width : 1000px;
+height : 400px;
+position: relative;
+}
+.textfooter { /*box with sitemap text*/
+padding-left: 400px;
+padding-top: 50px;
+width: 150px;
+float: left;
+}
+.textfooter a { /*sitemap links*/
+padding-left : 50px;
+text-decoration : none;
+color : white;
+font-size : 27px;
+}
+.light { /*illuminating the current page in sitemap*/
+padding-right : 50px;
+text-align : center;
+background-color: #28a30b;
+}
+.cr{ /*CR stands for Copyright*/ 
+font-family: monospace;
+color: white;
+font-size: 20px;
+position: absolute;
+top: 350px;
+}
